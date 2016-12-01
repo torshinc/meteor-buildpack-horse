@@ -11,7 +11,7 @@ cat > "$APP_CHECKOUT_DIR"/.profile.d/mongo_url.sh <<EOF
   #!/bin/bash
   if [ -z \$MONGO_URL ] ; then
     export MONGO_URL=\${MONGODB_URI:-\${MONGOLAB_URI:-\$MONGOHQ_URL}}
-    echo "meteor-buildpack-horse: MONGO_URL" MONGO_URL
+    echo "meteor-buildpack-horse: MONGO_URL" $MONGO_URL
   fi
   if [ -z \$MONGO_URL ] ; then
     echo "meteor-buildpack-horse: MONGO_URL missing, you must define it for meteor to work."
