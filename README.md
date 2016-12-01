@@ -9,11 +9,16 @@ To use this with your meteor app and heroku:
 1. Set up your app to [deploy to heroku with git](https://devcenter.heroku.com/articles/git).
 2. Set this repository as the buildpack URL:
 
-        heroku buildpacks:set https://github.com/AdmitHub/meteor-buildpack-horse.git
+        heroku buildpacks:set https://github.com/antoineclaval/meteor-buildpack-horse.git
 
-3. Add the MongoLab addon:
+3.a) Add the MongoLab addon:
         
         heroku addons:create mongolab
+OR
+
+3.b) Add the URL of our mongo instance on INT 
+
+		heroku config:set MONGOHQ_URL=mongodb://DBIntURL
 
 4. Set the `ROOT_URL` environment variable. This is required for bundling and running the app.  Either define it explicitly, or enable the [Dyno Metadata](https://devcenter.heroku.com/articles/dyno-metadata) labs addon to default to `https://<appname>.herokuapp.com`.
 
