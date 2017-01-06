@@ -2,7 +2,13 @@
 
 #
 # Heroku buildpack for Meteor
+
+#Options:
+BUILD_OPTIONS=--server-only # pass to meteor build 
 #
+
+echo "starting build process"
+echo $(date +"%T")
 
 # fail fast.
 set -e
