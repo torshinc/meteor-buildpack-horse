@@ -4,7 +4,9 @@
 # Heroku buildpack for Meteor
 
 #Options:
-BUILD_OPTIONS='--debug' # pass to meteor build 
+BUILD_OPTIONS='--debug ' # pass to meteor build 
+export METEOR_DEBUG_BUILD=1
+export METEOR_PROFILE=100
 #
 
 echo "starting build process"
