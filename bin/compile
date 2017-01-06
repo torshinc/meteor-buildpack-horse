@@ -12,8 +12,8 @@ echo $(date +"%T")
 
 # fail fast.
 set -e
-# debug verbosely.
-set -x
+# print shell command executed on top of echo. 
+#set -x
 
 # Load config vars into environment (from https://devcenter.heroku.com/articles/buildpack-api)
 export_env_dir() {
