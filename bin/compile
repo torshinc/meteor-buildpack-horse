@@ -4,7 +4,7 @@
 # Heroku buildpack for Meteor
 
 #Options:
-BUILD_OPTIONS=--server-only # pass to meteor build 
+BUILD_OPTIONS='--server-only --debug' # pass to meteor build 
 #
 
 echo "starting build process"
