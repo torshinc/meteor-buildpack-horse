@@ -5,9 +5,6 @@
 
 #Options:
 BUILD_OPTIONS='' # pass to meteor build 
-export METEOR_DEBUG_BUILD=1
-export METEOR_PROFILE=100
-#
 
 echo "starting build process"
 echo $(date +"%T")
