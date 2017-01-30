@@ -2,7 +2,6 @@
 ############################################
 # Get a binary of mediainfo v0.7.91
 ############################################
-set -e
 echo "-----> Install mediainfo v0.7.91"
 MEDIAINFO_BUILD_DIR=$1
 MEDIAINFO_VENDOR_DIR="vendor"
